@@ -1,0 +1,18 @@
+<header class="m-auto max-w-[1000px] min-h-[70dvh] flex items-center justify-center">
+	<div class="w-full text-center">
+		<h1 class="text-[50px]">
+			<slot name="title" />
+		</h1>
+		<p class="m-auto mt-[30px] max-w-[500px] text-gray-600">
+			<slot name="description" />
+		</p>
+		<div class="flex items-center justify-center gap-[25px] max-w-[500px] m-auto mt-[20px]">
+			<a href="/" class="w-full bg-yellow-300 py-[8px] rounded-[7px]">
+				<slot name="vocabulary" />
+			</a>
+			<a href="/" class="w-full bg-blue-400 py-[8px] rounded-[7px]">
+				<slot name="challenges" />
+			</a>
+		</div>
+	</div>
+</header>

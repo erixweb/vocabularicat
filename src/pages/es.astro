@@ -2,22 +2,23 @@
 import Layout from "../layouts/layout.astro"
 
 import Header from "../components/header.astro"
-import Navigation from "../components/nav.astro"
 import Vocabulary from "../components/icons/vocabulary.astro"
 import Language from "../components/icons/language.astro"
+import Navigation from "../components/nav.astro"
 ---
 
 <Layout title="Vocabularicat">
 	<Navigation>
-		<span slot="vocabulary">Vocabulari</span>
-		<span slot="challenges">Reptes</span>
-	</Navigation>	
+		<span slot="vocabulary">Vocabulario</span>
+		<span slot="challenges">Retos</span>
+	</Navigation>
 	<Header>
 		<span slot="title">Vocabularicat 👋</span>
 		<span slot="description">
-			Vocabularicat és una aplicació per aprendre vocabulari en català dividit en seccions.
+			Vocabularicat es una aplicación para aprender vocabulario en catalán dividido en
+			secciones.
 		</span>
-		<span slot="vocabulary">Veure el vocabulari</span>
-		<span slot="challenges">Anar-hi als reptes</span>
+		<span slot="vocabulary">Ver el vocabulario</span>
+		<span slot="challenges">Ir a los retos</span>
 	</Header>
 </Layout>
