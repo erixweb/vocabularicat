@@ -1,16 +1,20 @@
 ---
-
+import Layout from "../layouts/layout.astro"
+import Vocabulary from "../components/icons/vocabulary.astro"
+import Language from "../components/icons/language.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Vocabularicat">
+	<nav class="m-auto max-w-[1000px] min-h-[100px] flex items-center">
+		<div class="flex h-full gap-[20px]">
+			<a href="/" class="flex gap-[10px] items-center">
+				<Vocabulary />
+				<span>Vocabulari</span>
+			</a>
+			<a href="/" class="flex gap-[10px] items-center">
+				<Language />
+				<span>Reptes</span>
+			</a>
+		</div>
+	</nav>
+</Layout>
