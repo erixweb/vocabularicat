@@ -12,7 +12,7 @@
         Català
     </button>
     {#if show}
-    <div class="absolute top-[40px] rounded-[5px] bg-slate-200 p-[8px] px-[16px] flex gap-[20px] flex-col">
+    <div class="absolute top-[40px]  right-[0px] rounded-[5px] bg-slate-200 p-[8px] flex gap-[20px] flex-col">
         <a href="/es" class="flex gap-[10px] items-center justify-center">
             <SpanishFlag />
             Español
