@@ -18,4 +18,27 @@ import Navigation from "../components/nav.astro"
 		<span slot="vocabulary">Veure el vocabulari</span>
 		<span slot="challenges">Anar-hi als reptes</span>
 	</Header>
+	<main class="m-auto max-w-[1000px] min-h-[100px] w-full px-[20px] py-[20px]">
+		<h1 class="font-bold text-[35px] text-center my-[20px]">Vocabulari</h1>
+		<section class="flex flex-wrap justify-center items-center gap-[10px]">
+			<a href="/ca/meteo" class="bg-slate-200 rounded-[7px] max-w-[300px]">
+				<div>
+					<img src="/tempesta.webp" alt="" class="w-full h-[200px] rounded-t-[7px]">
+				</div>
+				<div class="p-[1em]">
+					<h1 class="text-[20px] font-bold">El temps</h1>
+					<p>Fenomens meteorològics, tempesta, pluja...</p>
+				</div>
+			</a>
+			<a href="/" class="bg-slate-200 rounded-[7px] max-w-[300px]">
+				<div>
+					<img src="/tempesta.webp" alt="" class="w-full h-[200px] rounded-t-[7px]">
+				</div>
+				<div class="p-[1em]">
+					<h1 class="text-[20px] font-bold">El temps</h1>
+					<p>Fenomens meteorològics, tempesta, pluja...</p>
+				</div>
+			</a>
+		</section>
+	</main>
 </Layout>
