@@ -1,6 +1,12 @@
 ---
-import Layout from "../../layouts/layout.astro"
-import Nav from "../../components/nav.astro"
+import { ViewTransitions } from "astro:transitions"
+import "../styles/index.css"
+import Layout from "./layout.astro";
+import Nav from "../components/nav.astro";
+
+interface Props {
+    title: string
+}
 ---
 
 <Layout title="Vocabularicat">
@@ -9,7 +15,7 @@ import Nav from "../../components/nav.astro"
 		<span slot="challenges">Reptes</span>
 	</Nav>
 	<main class="m-auto max-w-[1000px] min-h-[100px] w-full px-[20px] py-[20px]">
-		<h1 class="font-bold text-[35px] text-center my-[20px]">El temps</h1>
-        
+		<slot />
 	</main>
-</Layout>
+</L>
+

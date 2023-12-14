@@ -1,16 +1,20 @@
 ---
+import { getLanguage } from "../utils";
 import Language from "./icons/language.astro"
 import Vocabulary from "./icons/vocabulary.astro"
 import LanguageButton from "./language-button.svelte";
+
+const lang = getLanguage(Astro.url)[0]
+
 ---
 
 <nav class="m-auto max-w-[1000px] min-h-[100px] flex items-center w-full px-[20px]">
 	<div class="flex w-full h-full gap-[20px]">
-		<a href="/" class="flex gap-[10px] items-center">
+		<a href=`/${lang}#vocabulari` class="flex gap-[10px] items-center">
 			<Vocabulary />
 			<slot name="vocabulary">Vocabulari</slot>
 		</a>
-		<a href="/" class="flex gap-[10px] items-center">
+		<a href=`/${lang}#reptes` class="flex gap-[10px] items-center">
 			<Language />
 			<slot name="challenges">Reptes</slot>
 		</a>
